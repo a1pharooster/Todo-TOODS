@@ -27,15 +27,13 @@ function add(){
         task.remove();
       })
       task.addEventListener("click", e=> {
-          if(c%2==0){
+           if(checker.classList.contains("fa-square")){
             checker.classList.remove("fa-2x","fa-regular","fa-square")
             checker.classList.add("fa-2x","fa-solid" ,"fa-square-check")
-            c++;
           }
           else{
             checker.classList.remove("fa-2x","fa-solid" ,"fa-square-check")
             checker.classList.add("fa-2x","fa-regular","fa-square")
-            c++;
           }
          
       })
