@@ -20,7 +20,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(/web/todo/images/undraw_book_reading_re_fu2c.svg);
+  background-image: url(images/undraw_book_reading_re_fu2c.svg);
   z-index: 0;
 }
 
