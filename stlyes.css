@@ -21,12 +21,14 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-image: url(images/undraw_book_reading_re_fu2c.svg);
+  background-repeat: repeat;
+  background-attachment: fixed;
   z-index: 0;
 }
 
 .heading {
   padding: 2px;
-  margin: 0;
+  margin: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,11 +38,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          flex-direction: column;
   font-family: 'Dela Gothic One', cursive;
   color: #F50057;
   height: 10%;
   width: 100%;
-  font-size: 3rem;
+
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -78,6 +81,8 @@ body {
 .list {
   height: 93%;
   width: 50rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #inputval {
@@ -92,6 +97,7 @@ body {
   font-weight: bold;
   font-size: large;
   opacity: 0.8;
+  border-bottom: solid gray 1px;
 }
 
 .hove {
@@ -102,17 +108,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   opacity: 0.8;
   height: 100%;
   width: 4rem;
   margin: 0 0;
   padding: 0 0;
+  border-bottom: solid 1px gray;
 }
 
 .hove:hover {
@@ -149,21 +152,24 @@ body {
   cursor: pointer;
   color: black;
   width: 100%;
-  height: 10%;
   padding-right: 5rem;
+  margin: 5px 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          border-bottom: 1px dotted rgb(196, 196, 196);
 }
 
 .ptask {
   width: 100%;
   color: black;
-  padding: 6px;
+  padding-left: 10px;
   margin: 0;
+  word-break: break-all;
+ 
 }
 
 .footer {
@@ -201,6 +207,7 @@ body {
 .k {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  font-size: 3rem;
 }
 
 .k:hover {
@@ -208,3 +215,6 @@ body {
           transform: scale(1.3);
 }
 /*# sourceMappingURL=stlyes.css.map */
+#date {
+  margin-bottom: 2rem;
+}
