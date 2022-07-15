@@ -1,6 +1,7 @@
 var inputval = document.getElementById("inputval");
 var btn = document.getElementById("btn");
 var todolist = document.getElementById("todolist");
+let date = document.getElementById("date")
 let c = 0;
 function add(){
     if (inputval.value == "") {
@@ -27,7 +28,7 @@ function add(){
         task.remove();
       })
       task.addEventListener("click", e=> {
-           if(checker.classList.contains("fa-square")){
+          if(checker.classList.contains("fa-square")){
             checker.classList.remove("fa-2x","fa-regular","fa-square")
             checker.classList.add("fa-2x","fa-solid" ,"fa-square-check")
           }
@@ -47,7 +48,7 @@ function control(e){
         add();
     }
 }
-
+date.innerHTML = Date().slice(0,16)
 
 document.addEventListener("keydown", control)
 
